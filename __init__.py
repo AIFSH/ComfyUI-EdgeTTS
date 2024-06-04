@@ -49,7 +49,6 @@ class EdgeTTS:
     def tts(self,text,voice,rate,volume,pitch):
         out_file = os.path.join(out_path, f"edge_tts_{time.time_ns()}.mp3")
         vtt_file = out_file.split(".")[0] + ".vtt"
-        text = text.replace('\n', '')
         edge_tts_cmd = f"""edge-tts -t "{text}" -v {voice} --rate={rate} --volume={volume} \
             --pitch={pitch} --write-media {out_file} --write-subtitles {vtt_file}"""
         print(edge_tts_cmd)
