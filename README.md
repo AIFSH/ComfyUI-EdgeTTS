@@ -15,7 +15,7 @@ pip install -r requirements.txt
 ```
 
 ## Tutorial
-- [Demo]()
+- [Demo](https://www.bilibili.com/video/BV1MZ421p7GD)
 
 ## Thanks
 [edge-tts](https://github.com/rany2/edge-tts)
